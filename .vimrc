@@ -30,18 +30,19 @@ set encoding=utf-8
 " Whitespace
 set autoindent
 set textwidth=79
-set formatoptions=tcqrn1
+set formatoptions-=cro
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set noshiftround
+set nowrap
 
-" Cursor motion
-set scrolloff=3
+" Cursor appearance
+set cursorline
+set scrolloff=10
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
-runtime! macros/matchit.vim
 
 " Move up/down editor lines
 nnoremap j gj
@@ -64,8 +65,6 @@ set showmode
 set showcmd
 
 " Searching
-nnoremap / /\v
-vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
