@@ -7,6 +7,10 @@ filetype off
 " Turn on syntax highlighting
 syntax on
 
+" Switch buffers with tab & shift-tab
+:nnoremap <Tab> :tabn<CR>
+:nnoremap <S-Tab> :tabp<CR>
+
 " For plugins to load correctly
 filetype plugin indent on
 
